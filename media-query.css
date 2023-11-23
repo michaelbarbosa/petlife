@@ -9,11 +9,16 @@
     header {
         align-items: center;
         padding:16px 40px;
+        display: flex;
     }
     
     header nav a {
         padding: 16px;
     } 
+
+    header img {
+        padding-bottom: 0px;
+    }
 
     /* -------------------------- */
     /* -----------INICIO----------- */
@@ -46,6 +51,7 @@
     
     .centralizar{
         font-size: 0.7rem;
+        display: flex;
     }
     
     .botao {
@@ -121,6 +127,13 @@
     /* DESKTOP */ 
     header {
         padding:24px 80px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    header img {
+        padding-bottom: 0px;
     }
     
     header nav a {
@@ -153,6 +166,7 @@
         text-align: center;
         height: 100px;
         width: 100%; 
+        display: flex;
     }
     
     .botao {
