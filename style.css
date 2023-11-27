@@ -1,12 +1,11 @@
 /* Estilos Globais */
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;...');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -17,10 +16,10 @@ body {
 /* Estilos do Header */
 
 header {
-    display: block;
     background-color: green;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 header img {
@@ -28,16 +27,17 @@ header img {
 }
 
 header nav a {
-    
     text-decoration: none;
     color: white;
     font-weight: 600;
-    padding: 15px;
+    padding: 10px 15px;
 }
 
 header nav a:hover{
     text-decoration: underline;
     text-underline-offset: 4px;
+    background-color: #53bb53;
+    border-radius: 8px;
 }
 
 /* -------------------------- */
@@ -45,7 +45,6 @@ header nav a:hover{
 
 #inicio{
     position: relative;
-    margin-bottom: 40px;
 }
 
 #inicio .foto{
@@ -60,46 +59,44 @@ header nav a:hover{
     top: 0;
     left: 0;
     margin-top: 90px;
-    z-index: -10;
-    margin-bottom: 10px;
+    z-index: -1;
 }
 
 h1, h2 {
     text-align: center;
     font-size: 25px;
-    margin-bottom: 5px;
-    color: #ff9a6c;
-    padding: 5px 35px;
+    color: #c94f17;
+    margin-bottom: 20px;
 }
 
 .paragrafo {
     text-align: justify;
-    padding: 35px;
-    margin-bottom: 20px;
+    padding: 20px;
     text-indent: 20px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .centralizar {
     text-align: center;
-    
-    font-weight: 600;
+    font-weight: bolder;
     padding: 20px;
 }
 
 .botao, .botao_transparente {
-    max-width: 250px;
+    display: block;
     margin: auto;
+    border-radius: 23px;
+    text-decoration: none;
+    
 }
 
 .botao {
-    display: block;
     background-color: green;
-    text-decoration: none;
     color: white;
     padding: 15px;
     margin-bottom: 10px;
-    border-radius: 8px;
+    
 }
 
 .botao:hover {
@@ -108,9 +105,7 @@ h1, h2 {
 }
 
 .botao_transparente {
-    display: block;
     background-color: transparent;
-    text-decoration: none;
     color: green;
     border: 2px solid transparent;
     padding: 15px;
@@ -119,8 +114,6 @@ h1, h2 {
 .botao_transparente:hover {
     text-underline-offset: 4px;
     border: 2px solid green;
-    border-radius: 8px;
-    
 }
 
 /* -------------------------- */
@@ -135,7 +128,6 @@ h1, h2 {
 }
 
 #clinica ul {
-    margin-top: -40px;
     padding: 0 70px;
     text-align: justify;
     font-size: 15px;
@@ -179,7 +171,7 @@ h1, h2 {
 
 .duvida img {
     position: absolute;
-    top: 35px;
+    top: 20px;
     right: 24px;
     padding: 8px;
 }
@@ -202,7 +194,7 @@ h1, h2 {
 .duvida.ativa .paragrafo {
     height: fit-content;
     opacity: 1;
-    padding: 12px;
+    padding: 16px;
 }
 
 /* ---------FOOTER--------- */
@@ -256,6 +248,6 @@ footer p a {
 }
 
 #copyright a{
-    color: #008000;
+    color: #c94f17;
     font-weight: 600;
 }
